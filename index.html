@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz</title>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <div id="timer-container">
+            <p id="timer"></p>
+        </div>
+
+        <h1>Quiz Time!</h1>
+
+        <form id="quiz-form">
+            <!-- Question -1 -->
+            <div class="question" id="question1">
+                <p>1. What is the capital of France?</p>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q1" value="a"> a) Paris
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q1" value="b"> b) Rome
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q1" value="c"> c) Berlin
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <!-- Question -2 -->
+            <div class="question" id="question2" style="display: none;">
+                <p>2. Which planet is known as the Red Planet?</p>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q2" value="a"> a) Venus
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q2" value="b"> b) Mars
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q2" value="c"> c) Jupiter
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <!-- Question -3 -->
+            <div class="question" id="question3"style="display: none;">
+                <p>3. Which animal is known as the 'Ship of the Desert"</p>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q3" value="a"> a) Camel
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q3" value="b"> b) Lion
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q3" value="c"> c) Tiger
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <!-- Question -4 -->
+            <div class="question" id="question4"style="display: none;">
+                <p>4. How many hours are there in a day?</p>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q4" value="a"> a) 24hrs
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q4" value="b"> b) 23hrs
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q4" value="c"> c) 25hrs
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <!-- Question -5 -->
+            <div class="question" id="question5"style="display: none;">
+                <p>5. How many letters are there in the English alphabet?</p>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q5" value="a"> a) 25 Letters
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q5" value="b"> b) 26 Letters
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q5" value="c"> c) 27 Letters
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <!-- Question -6 -->
+            <div class="question" id="question6"style="display: none;">
+                <p>6. How many days are there in a year?</p>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q6" value="a"> a) 365 days (not a leap year)
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q6" value="b"> b) 366 days (not a leap year)
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q6" value="c"> c) 364 days (not a leap year)
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <!-- Question -7 -->
+            <div class="question" id="question7"style="display: none;">
+                <p>7. How many seconds make one hour?</p>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q7" value="a"> a)  2600 seconds
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q7" value="b"> b)  3600 seconds
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q7" value="c"> c) 4600 seconds
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <!-- Question -8 -->
+            <div class="question" id="question8"style="display: none;">
+                <p>8. Baby frog is known as.......</p>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q8" value="a"> a)  Tadpole
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q8" value="b"> b)  kitty
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q8" value="c"> c) puppy
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <!-- Question -9 -->
+            <div class="question" id="question9"style="display: none;">
+                <p>9. How many consonants are there in the English alphabet?</p>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q9" value="a"> a)  22 Consonants
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q9" value="b"> b)  23 Consonants
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q9" value="c"> c) 21 Consonants
+                    </label>
+                </div>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <!-- Question -10 -->
+            <div class="question" id="question10"style="display: none;">
+                <p>10. Which animal is known as the king of the jungle</p>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q10" value="a"> a) Lion
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q10" value="b"> b) Leopard
+                    </label>
+                </div>
+                <div class="option-box">
+                    <label>
+                        <input type="radio" name="q10" value="c"> c) cheeta
+                    </label>
+                </div>
+                <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+            </div>
+
+
+            
+
+        </form>
+
+        <div id="message"></div>
+        <div id="final-page" style="display: none;">
+            <h2>Quiz Completed!</h2>
+            <p id="overall-score"></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
